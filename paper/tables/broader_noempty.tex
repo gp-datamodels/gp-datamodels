@@ -1,0 +1,15 @@
+\begin{tabular}{@{}lccccccccc@{}}
+\toprule
+& \multicolumn{3}{c}{AG News topics} & \multicolumn{3}{c}{UCI HAR} & \multicolumn{3}{c}{Coin flip} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}
+$n$ & 128 & 256 & 512 & 128 & 256 & 512 & 32 & 64 & 128 \\
+\midrule
+RBF kernel ridge & 0.0668 & 0.00354 & 0.00724 & 0.161 & 0.115 & 0.104 & 0.981 & 0.980 & 0.626 \\
+Degree-3 ridge & 0.187 & 0.00479 & 0.00794 & 0.247 & 0.184 & 0.156 & \textbf{0.910} & 0.954 & 0.792 \\
+TNDM-CP (ALS) & 0.00585 & 0.00185 & 0.000887 & 0.197 & 0.156 & 0.113 & 1.28 & 1.02 & \textbf{0.553} \\
+TNDM-TT (ALS) & 0.171 & 0.00140 & 0.00118 & 0.264 & 0.256 & 0.608 & 1.18 & 1.24 & 0.862 \\
+TNDM-CP (gradient) & 0.295 & 0.0253 & 0.0112 & 0.271 & 0.166 & 0.0978 & 1.17 & 1.21 & 0.676 \\
+TNDM-TT (gradient) & 0.249 & 0.0164 & 0.00726 & 0.284 & 0.123 & \textbf{0.0635} & 1.43 & 1.12 & 0.807 \\
+GP datamodel (ours) & \textbf{0.00265} & \textbf{0.00101} & \textbf{0.000721} & \textbf{0.0937} & \textbf{0.0297} & 0.115 & 0.946 & \textbf{0.927} & 0.590 \\
+\bottomrule
+\end{tabular}

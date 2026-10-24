@@ -1,0 +1,21 @@
+{
+ "argv": [
+  "scripts/run_bench.py",
+  "--bench",
+  "probe",
+  "--method",
+  "gp",
+  "--shard",
+  "qwen_probe",
+  "--run-dir",
+  "out/runs/probe-gp-qwen_probe"
+ ],
+ "bench": "probe",
+ "method": "gp",
+ "shard": "qwen_probe",
+ "units": [
+  "s31",
+  "s43",
+  "s59"
+ ]
+}

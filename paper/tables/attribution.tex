@@ -1,0 +1,13 @@
+\begin{tabular}{@{}lcccccccc@{}}
+\toprule
+& \multicolumn{4}{c}{Qwen probe (3 seeds)} & \multicolumn{4}{c}{UCI HAR (10 splits)} \\
+\cmidrule(lr){2-5}\cmidrule(lr){6-9}
+Datamodel & Shapley & Banzhaf & LOO & SII & Shapley & Banzhaf & LOO & SII \\
+\midrule
+Linear & 67.9 & 33.1 & 310 & 230 & 46.1 & 1.45 & 3.36 & 50.0 \\
+RBF kernel ridge & 9.97 & 5.38 & 9.05 & 19.1 & 41.5 & 1.39 & 1.56 & 45.9 \\
+TNDM-CP & 152 & 23.2 & 190 & 123 & 24.8 & 1.01 & 2.95 & 27.1 \\
+TNDM-TT & 55.4 & 18.7 & 77.3 & 62.2 & 29.9 & 1.58 & 1.56 & 34.0 \\
+GP datamodel (ours) & \textbf{0.759} & \textbf{1.30} & \textbf{2.39} & \textbf{2.01} & \textbf{21.4} & \textbf{0.874} & \textbf{0.0704} & \textbf{25.0} \\
+\bottomrule
+\end{tabular}

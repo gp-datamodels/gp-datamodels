@@ -1,0 +1,24 @@
+{
+ "argv": [
+  "scripts/run_bench.py",
+  "--bench",
+  "d12",
+  "--method",
+  "gp-tau0.5",
+  "--shard",
+  "seed59",
+  "--run-dir",
+  "out/runs/d12-gp-tau0.5-seed59"
+ ],
+ "bench": "d12",
+ "method": "gp-tau0.5",
+ "shard": "seed59",
+ "units": [
+  "s59-m32",
+  "s59-m48",
+  "s59-m64",
+  "s59-m96",
+  "s59-m128",
+  "s59-m160"
+ ]
+}

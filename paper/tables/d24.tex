@@ -1,0 +1,19 @@
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+& \multicolumn{3}{c}{Test NMSE} & \multicolumn{2}{c}{Removal RMSE, $n=1024$} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-6}
+Datamodel & $n=256$ & $n=512$ & $n=1024$ & joint & LOO \\
+\midrule
+Linear & 0.749\,{\scriptsize$\pm$0.0003} & 0.687\,{\scriptsize$\pm$0.0005} & 0.669\,{\scriptsize$\pm$0.0007} & 2.74\,{\scriptsize$\pm$0.02} & 1.18\,{\scriptsize$\pm$0.004} \\
+Degree-2 ridge & 0.626\,{\scriptsize$\pm$0.0009} & 0.467\,{\scriptsize$\pm$0.001} & 0.348\,{\scriptsize$\pm$0.0009} & 2.12\,{\scriptsize$\pm$0.007} & 0.962\,{\scriptsize$\pm$0.007} \\
+Degree-3 ridge & 0.669\,{\scriptsize$\pm$0.001} & 0.510\,{\scriptsize$\pm$0.002} & 0.342\,{\scriptsize$\pm$0.002} & 3.87\,{\scriptsize$\pm$0.02} & 1.33\,{\scriptsize$\pm$0.005} \\
+Degree-3 OMP & 0.859\,{\scriptsize$\pm$0.002} & 0.635\,{\scriptsize$\pm$0.02} & 0.271\,{\scriptsize$\pm$0.02} & 6.29\,{\scriptsize$\pm$0.06} & 3.14\,{\scriptsize$\pm$0.03} \\
+RBF kernel ridge & 0.562\,{\scriptsize$\pm$0.0002} & 0.386\,{\scriptsize$\pm$0.0008} & 0.257\,{\scriptsize$\pm$0.001} & 2.10\,{\scriptsize$\pm$0.04} & 1.01\,{\scriptsize$\pm$0.03} \\
+HT & 0.951\,{\scriptsize$\pm$0.02} & 0.850\,{\scriptsize$\pm$0.03} & 0.766\,{\scriptsize$\pm$0.06} & 3.39\,{\scriptsize$\pm$0.1} & 0.555\,{\scriptsize$\pm$0.005} \\
+TT degree ladder & 0.660\,{\scriptsize$\pm$0.01} & 0.432\,{\scriptsize$\pm$0.004} & 0.269\,{\scriptsize$\pm$0.003} & 4.30\,{\scriptsize$\pm$0.1} & 1.66\,{\scriptsize$\pm$0.2} \\
+TNDM-CP & 0.490\,{\scriptsize$\pm$0.04} & 0.148\,{\scriptsize$\pm$0.03} & 0.0870\,{\scriptsize$\pm$0.002} & 1.94\,{\scriptsize$\pm$0.3} & 0.780\,{\scriptsize$\pm$0.2} \\
+TNDM-TT & 0.472\,{\scriptsize$\pm$0.01} & 0.188\,{\scriptsize$\pm$0.004} & 0.0712\,{\scriptsize$\pm$0.006} & 1.39\,{\scriptsize$\pm$0.04} & 0.559\,{\scriptsize$\pm$0.02} \\
+\midrule
+GP datamodel (ours) & \textbf{0.0178}\,{\scriptsize$\pm$0.009} & \textbf{0.00767}\,{\scriptsize$\pm$0.002} & \textbf{0.00657}\,{\scriptsize$\pm$0.002} & \textbf{0.120}\,{\scriptsize$\pm$0.02} & \textbf{0.000143}\,{\scriptsize$\pm$0.00006} \\
+\bottomrule
+\end{tabular}

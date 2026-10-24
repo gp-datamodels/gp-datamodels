@@ -1,0 +1,11 @@
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.venv/
+*.tmp
+
+# fetched by scripts/get_tndm.sh, not redistributed
+third_party/
+
+# runs of a rerun campaign (scripts/run_task.py); the paper's runs are in results/runs/
+out/

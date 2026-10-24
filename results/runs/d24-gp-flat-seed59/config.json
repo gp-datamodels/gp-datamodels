@@ -1,0 +1,21 @@
+{
+ "argv": [
+  "scripts/run_bench.py",
+  "--bench",
+  "d24",
+  "--method",
+  "gp-flat",
+  "--shard",
+  "seed59",
+  "--run-dir",
+  "out/runs/d24-gp-flat-seed59"
+ ],
+ "bench": "d24",
+ "method": "gp-flat",
+ "shard": "seed59",
+ "units": [
+  "s59-m256",
+  "s59-m512",
+  "s59-m1024"
+ ]
+}

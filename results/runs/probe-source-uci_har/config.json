@@ -1,0 +1,28 @@
+{
+ "argv": [
+  "scripts/run_bench.py",
+  "--bench",
+  "probe",
+  "--method",
+  "source",
+  "--shard",
+  "uci_har",
+  "--run-dir",
+  "out/runs/probe-source-uci_har"
+ ],
+ "bench": "probe",
+ "method": "source",
+ "shard": "uci_har",
+ "units": [
+  "s12001",
+  "s12002",
+  "s12003",
+  "s12004",
+  "s12005",
+  "s12006",
+  "s12007",
+  "s12008",
+  "s12009",
+  "s12010"
+ ]
+}

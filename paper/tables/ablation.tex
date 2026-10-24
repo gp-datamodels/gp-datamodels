@@ -1,0 +1,14 @@
+\begin{tabular}{@{}lccccccccc@{}}
+\toprule
+Variant & \rotatebox{90}{R24, NMSE, $n=256$} & \rotatebox{90}{R24, NMSE, $n=1024$} & \rotatebox{90}{R8, NMSE, $n=48$} & \rotatebox{90}{R12, AP, $n=96$} & \rotatebox{90}{Modular, Shapley, $n=32$} & \rotatebox{90}{AG News, Shapley, $n=128$} & \rotatebox{90}{Sport--Music, $R^2$} & \rotatebox{90}{UCI HAR, NMSE, $n=512$} & \rotatebox{90}{Probe, Shapley ($\times10^{3}$)} \\
+\midrule
+GP datamodel (BIC order) & 0.0178 & 0.00657 & 0.363 & \textbf{0.666} & 0.356 & 0.303 & \textbf{0.791} & 0.427 & 0.759 \\
+One component & \textbf{0.00797} & 0.00944 & 0.363 & \textbf{0.666} & 0.356 & 0.303 & \textbf{0.791} & 1.07 & 1.83 \\
+One stationary component & 0.0170 & \textbf{0.00275} & 0.363 & \textbf{0.666} & 0.347 & 0.303 & \textbf{0.791} & 4.67 & 15.2 \\
+Isotropic (one relevance) & 0.459 & 0.201 & 0.374 & 0.114 & 0.459 & 0.333 & 0.693 & 0.631 & 12.3 \\
+Flat priors & 1935 & 0.391 & 34.4 & 0.580 & 25.3 & 0.314 & 0.780 & \textbf{0.301} & 0.776 \\
+Two components, fresh starts only & 0.0304 & 0.00581 & 0.431 & 0.630 & 0.413 & \textbf{0.240} & 0.772 & 0.427 & 0.759 \\
+$\tau=0.5$ & 0.0181 & 0.00681 & \textbf{0.327} & 0.541 & 0.401 & 0.314 & 0.779 & 0.384 & \textbf{0.744} \\
+$\tau=2$ & 0.0247 & 0.00536 & 0.378 & 0.651 & \textbf{0.328} & 0.301 & 0.785 & 0.446 & 0.753 \\
+\bottomrule
+\end{tabular}

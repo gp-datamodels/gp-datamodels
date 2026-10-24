@@ -1,0 +1,21 @@
+{
+ "argv": [
+  "scripts/run_bench.py",
+  "--bench",
+  "d24",
+  "--method",
+  "gp-stationary",
+  "--shard",
+  "seed43",
+  "--run-dir",
+  "out/runs/d24-gp-stationary-seed43"
+ ],
+ "bench": "d24",
+ "method": "gp-stationary",
+ "shard": "seed43",
+ "units": [
+  "s43-m256",
+  "s43-m512",
+  "s43-m1024"
+ ]
+}

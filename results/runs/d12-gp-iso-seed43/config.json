@@ -1,0 +1,24 @@
+{
+ "argv": [
+  "scripts/run_bench.py",
+  "--bench",
+  "d12",
+  "--method",
+  "gp-iso",
+  "--shard",
+  "seed43",
+  "--run-dir",
+  "out/runs/d12-gp-iso-seed43"
+ ],
+ "bench": "d12",
+ "method": "gp-iso",
+ "shard": "seed43",
+ "units": [
+  "s43-m32",
+  "s43-m48",
+  "s43-m64",
+  "s43-m96",
+  "s43-m128",
+  "s43-m160"
+ ]
+}
